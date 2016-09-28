@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css" media="screen" title="no title">
+    <link rel="stylesheet" href="semantic.min.css" media="screen" title="no title">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="semantic.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $(document).on('click','button', function(){
+          $(this).siblings().toggle();
+        })
+
+        $(document).on('click', '#icon_1', function(){
+          window.open("https://github.com/Alex71197");
+        })
+
+        $(document).on('click','#icon_2', function(){
+          window.open("https://www.linkedin.com/in/alex-villacres-952a04112?trk=nav_responsive_tab_profile_pic");
+        })
+
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Alex Villacres</h1>
+      <img src="IMG_2434.jpg" alt="">
+      <div class="icons">
+        <i id="icon_1" class="massive github icon"></i>
+        <i id="icon_2" class="massive linkedin square icon"></i>
+      </div>
+      <div class="ui divider"></div>
+      <div class="description">
+        <button class="ui blue basic button">About Me</button>
+        <p style="display: none;">
+          Born and raised in Monterey, California, Alex has managed to avoid traditional higher education by taking the alternative route to learning. Attended UnCollege Gap Year and had the priveledge of travelling to South East Asia twice in one year. Got to explore interests and passions. Currently attending Coding Dojo in pursuit of a career in Website Development. Cheers m8.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
